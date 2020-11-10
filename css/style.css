@@ -4,10 +4,9 @@
   margin: 0;
   padding: 0;
 
-  /* Proprietà temporanee  */
-  color: white;
-  font-weight: bold;
+  /* Arrotonda bordi di default */
   border-radius: 5px;
+
 }
 
 
@@ -28,24 +27,46 @@
 .container{
   width: 1000px;  /* Ricalco l'immagine di riferimento */
   margin: auto;
-  border: 1px solid black;
 }
 
 /* Blocco header */
 .block-header{
-  background-color: yellow;
   margin-top:20px;
+  margin-bottom:15px;
   height: 420px;
+
+}
+
+.header-testata{
+  width:100%;
+  height: 380px;
+  border: 10px solid white;
+  background-image:url(../img/header-sfondo.png);
+  border-radius: 0px;
+}
+
+.header-navbar{
+  width:100%;
+  height:45px;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 0px;
 }
 
 /* Contenuto del sito */
 .content{
   width: 100%;
-  background-color: rgba(255,255,0,0.2);
   margin: 10px 0;
-  border: 1px solid orange;
-  margin-bottom:50px;
+  margin-bottom:45px;
 }
+
+
+/* Colori blocchi */
+.block1-sx, .content-center, .block1-dx, .block2-dx, .block3-dx {
+  background-color: white;
+}
+/* /Colori blocchi */
+
+
 /* Sidebar a sinistra */
 .sidebar-left{
   width: 25%;
@@ -58,14 +79,12 @@
 .block1-sx{
   width: 100%;
   height: 450px;
-  background-color: rgba(255,0,255,0.5);
 }
 
 /* Contenuto al centro dello schermo */
 .content-center{
   width: 50%;
-  height: 370px;
-  background-color: rgb(255,0,255);
+  height: 350px;
 }
 
 .sidebar-right{
@@ -77,14 +96,12 @@
   width: 100%;
   height: 380px;
   margin-bottom: 40px; /* Solo padding inferiore */
-  background-color: rgba(255,0,255,0.5);
 }
 
 .block2-dx{
   width: 100%;
   height: 380px;
   padding-bottom: 20px; /* Solo padding inferiore */
-  background-color: rgba(255,0,255,0.5);
   margin-bottom: 40px
 }
 
@@ -92,13 +109,12 @@
   width: 100%;
   height: 380px;
   padding-bottom: 20px; /* Solo padding inferiore */
-  background-color: rgba(255,0,255,0.5);
 }
 
 
 /* Blocco footer */
 .block-footer{
-  background-color: lightblue;
+  background-color: lightgrey;
   height: 150px;
 }
 
@@ -113,7 +129,7 @@
   transform: translate(-50%,0%);
   opacity: 0%;
   background-image: url(../img/reference.png);
-  border: 1px solid black;
+
 }
 
 .reference:hover{
