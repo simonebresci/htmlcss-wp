@@ -1,6 +1,7 @@
-/* COMPLETARE NAVBAR (Reset + altro)
-USARE COLOR PICKER I COLORI ESATTI*/
-
+/* Modifiche non consegnate
+1) Font personalizzati
+2) Mouse hover su navbar
+*/
 
 
 /* Inizializzazione pagina */
@@ -8,13 +9,11 @@ USARE COLOR PICKER I COLORI ESATTI*/
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-
   /* Arrotonda bordi di default */
   border-radius: 5px;
-
 }
 
-
+/* Sfondo del sito */
 .sfondo{
   position: fixed; /* padre relative = body */
   z-index: -1; /* Posiziona su livello inferiore */
@@ -27,6 +26,7 @@ USARE COLOR PICKER I COLORI ESATTI*/
   background-repeat: repeat;
 
 }
+/* /Sfondo del sito */
 
 /* Container del sito */
 .container{
@@ -34,22 +34,54 @@ USARE COLOR PICKER I COLORI ESATTI*/
   margin: auto;
 }
 
-/* Blocco header */
+/* Blocco header - testata + navbar*/
 .block-header{
   margin-top:20px;
   margin-bottom:15px;
   height: 420px;
-
 }
 
+/* Header - testata con sfondo */
 .header-testata{
+  position: relative;
   width:100%;
   height: 380px;
   border: 10px solid white;
-  background-image:url(../img/header-sfondo.png);
+  background-image:url("../img/header-sfondo.png");
   background-size: cover;
   border-radius: 0px;
+  text-align: center;
 }
+/* /Header - testata con sfondo */
+
+/* Header-over = Logo + slogan in sovraimpressione */
+.header-over{
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  margin: 0 auto;
+  text-align: center;
+}
+/* /Header-over = Logo + slogan in sovraimpressione */
+
+/* Logo sulla testata del sito */
+.header-over img{
+  position: relative;
+  left:50%;
+  transform: translate(-50%,0);
+  display: block;
+  width: 100%;
+}
+/* Logo sulla testata del sito */
+
+/* Slogan sulla testata del sito */
+.header-over span{
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+/* /Slogan sulla testata del sito */
 
 /* Navbar del sito */
 .header-navbar{
@@ -59,6 +91,7 @@ USARE COLOR PICKER I COLORI ESATTI*/
   border-radius: 0px;
 }
 
+/* Personalizzazione liste dentro navbar */
 .header-navbar ul{
   text-decoration: none;
   text-align: center;
@@ -67,6 +100,7 @@ USARE COLOR PICKER I COLORI ESATTI*/
   font-size: 11px;
 }
 
+/* Personalizzazione elementi liste dentro navbar */
 .header-navbar li {
   display: inline;
   text-decoration: none;
@@ -75,8 +109,8 @@ USARE COLOR PICKER I COLORI ESATTI*/
   padding: 0px 10px;
 }
 
+/* Reset estetica link dentro la navbar */
 .header-navbar a {
-  /* Reset estetica link */
   color: white;
   font-weight: bold;
   text-decoration: none;
@@ -98,16 +132,14 @@ USARE COLOR PICKER I COLORI ESATTI*/
 }
 /* /Colori blocchi */
 
-
 /* Sidebar a sinistra */
 .sidebar-left{
   width: 25%;
   padding-right: 50px;
-  /* height: */ Determinata dal contenuto
+  /* height:  Determinata dal contenuto*/
 
 }
-
-
+/* Personalizzazione degli h1 nel content del sito */
 .content h1{
   font-size: 24px;
   color: #333;
@@ -115,13 +147,13 @@ USARE COLOR PICKER I COLORI ESATTI*/
   margin-bottom: 30px;
 }
 
+/* Personalizzazione paragrafi nel content del sito */
 .content p{
   font-size: 18px;
   line-height: 30px;
 }
 
-
-
+/* Padding delle colonne dentro il content */
 .content-center, .block1-dx, .block2-dx, .block3-dx{
   padding: 20px;
   font-weight: bold;
@@ -215,7 +247,19 @@ USARE COLOR PICKER I COLORI ESATTI*/
   text-align: center;
   height: 125px;
   margin: 0 auto;
-  border: 1px solid orange;
+}
+
+.footer-box{
+  position: relative;
+  width: 33%;
+  height: 125px;
+}
+
+.footer-box img{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
 }
 
 .link-facebook, .link-insta, .link-gatto{
@@ -229,22 +273,10 @@ USARE COLOR PICKER I COLORI ESATTI*/
   background-position: center;
 }
 
-.link-facebook{
-  background-image: url(../img/icone/facebook.jpg);
-}
-
-.link-insta{
-  background-image: url(../img/icone/instagram.png);
-}
-
-.link-gatto{
-  background-image: url(../img/icone/gatto.png);
-}
-
 
 /* Reference img */
-.reference{
-  position: absolute; /* padre relative lo prende dal body;*/
+/* .reference{
+  position: absolute;
   z-index:0;
   height: 1891px;
   width: 1667px;
@@ -254,7 +286,7 @@ USARE COLOR PICKER I COLORI ESATTI*/
   opacity: 0%;
   background-image: url(../img/reference.png);
 
-}
+} */
 
 .reference:hover{
   opacity: 100%;
